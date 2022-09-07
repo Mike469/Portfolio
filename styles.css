@@ -4,8 +4,6 @@ body {
     font-weight: 400;
 }
 
-#start_of_header
-
 header {
     background-color: #222;
     text-align: center;
@@ -190,5 +188,3 @@ nav a:hover {
         color: #ff6262;
     }
 }
-
-#end_of_header

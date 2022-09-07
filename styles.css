@@ -4,6 +4,8 @@ body {
     font-weight: 400;
 }
 
+#start_of_header
+
 header {
     background-color: #222;
     text-align: center;
@@ -25,16 +27,26 @@ header {
     display: flex;
     align-items: center;
 }
+.nav-toggle-label:hover{
+    cursor: pointer;
+}
 
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
     display: block;
-    background: #ff6262;
+    background: white;
     height: .2em;
     width: 2em;
     border-radius: 2px;
     position: relative;
+}
+
+.nav-toggle-label span:hover,
+.nav-toggle-label span:hover::before,
+.nav-toggle-label span:hover::after
+ {
+    background: #ff6262;
 }
 
 .nav-toggle-label span::before,
@@ -51,7 +63,7 @@ header {
     top: 7px;
 }
 
-nav {
+nav.middle {
     background: #222;
     position: absolute;
     text-align: left;
@@ -98,7 +110,7 @@ nav a:hover {
     color: #ff6262;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1050px) {
 
     .nav-toggle-label {
         display: none;
@@ -157,6 +169,11 @@ nav a:hover {
     nav.end {
         all: unset;
         grid-column: 3/4;
+        align-self: center;
+    }
+
+    nav.end a {
+        margin-right: 2em;
     }
 
     ion-icon {
@@ -165,9 +182,13 @@ nav a:hover {
         background-size: 1%;
         color: whitesmoke;
         text-decoration: none;
+        justify-items: center;
+        align-items: center;
     }
 
     ion-icon:hover {
         color: #ff6262;
     }
 }
+
+#end_of_header

@@ -5,7 +5,8 @@ body {
 }
 
 header {
-    background-color: #222;
+    top: 0;
+    background-color: black;
     text-align: center;
     position: fixed;
     z-index: 50;
@@ -62,7 +63,7 @@ header {
 }
 
 nav.middle {
-    background: #222;
+    background: black;
     position: absolute;
     text-align: left;
     top: 100%;
@@ -71,6 +72,7 @@ nav.middle {
     transform: scale(1,0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
+    font-family: 'Zilla Slab', serif;
 }
 nav ul {
     margin: 0;
@@ -106,6 +108,7 @@ nav a:hover {
 
 .logo {
     color: #ff6262;
+    font-family: 'Zilla Slab', serif;
 }
 
 @media screen and (min-width: 1050px) {
@@ -122,6 +125,7 @@ nav a:hover {
         grid-column: 1 / 2;
         color: 	#ff6262;
         justify-self: center;
+        font-family: 'Zilla Slab', serif;
     }
 
     nav.middle {
@@ -130,6 +134,7 @@ nav a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: 'Zilla Slab', serif;
     }
 
     nav ul {
@@ -146,7 +151,7 @@ nav a:hover {
         position: relative;
     }
 
-    nav a.middle::before {
+    nav.middle a::before {
         content: '';
         display: block;
         height: 3px;
@@ -176,9 +181,6 @@ nav a:hover {
 
     ion-icon {
         font-size: 2.5em;
-        border-radius: 10em;
-        background-size: 1%;
-        color: whitesmoke;
         text-decoration: none;
         justify-items: center;
         align-items: center;
@@ -188,3 +190,62 @@ nav a:hover {
         color: #ff6262;
     }
 }
+
+
+
+
+html, section {
+    height: 52em;
+    }
+    section {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      position: relative;
+      }
+    section::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 0;
+      height: 100%;
+      }
+  
+  h1.cute_name {
+    display: inline-block;
+    color: #ff6262;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 12em; 
+    text-shadow: .03em .03em 0 black;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+  h1.cute_name:after {
+      width: 4.1em;
+      content: attr(data-shadow);
+      position: absolute;
+      top: .05em; left: 0em;
+      z-index: -1;
+      text-shadow: none;
+      background-image:
+        linear-gradient(
+          45deg,
+          transparent 45%,
+          hsla(48,20%,90%,1) 45%,
+          hsla(48,20%,90%,1) 55%,
+          transparent 0
+          );
+      background-size: .05em .05em;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    
+      animation: shad-anim 20s linear infinite;
+      }
+  
+  @keyframes shad-anim {
+    0% {background-position: 0 0}
+    0% {background-position: 100% -100%}
+    }

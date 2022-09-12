@@ -349,14 +349,17 @@ h1.cute_name:after {
 section.about {
   background-color: white;
   width: 100%;
-  height: 50em;
+  height: 100em;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 div.about {
   margin-top: 6em;
+}
+.about {
+  scroll-margin-top: 1.5em;
 }
 
 h2.about {
@@ -389,4 +392,31 @@ p.about {
   font-family: "Zilla Slab", serif;
   font-size: 2em;
   top: 9em;
+}
+
+div.projects {
+  top: 3em;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  color: #ff6262;
+  font-family: "Bebas Neue", cursive;
+  font-size: 5em;
+  text-shadow: 0.03em 0.03em 0 black;
+  justify-self: center;
+  position: relative;
+}
+
+div.about:after {
+  content: "";
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: inline-block;
+  border: 0.4em solid #333333;
+  background-color: #333333;
+  border-radius: 8px;
+  width: 100%;
+  height: 0.01em;
+  position: absolute;
+  left: 0;
+  top: 21.7em;
 }

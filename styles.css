@@ -349,10 +349,11 @@ h1.cute_name:after {
 section.about {
   background-color: white;
   width: 100%;
-  height: 200em;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 50em 1fr 1fr;
+  grid-template-rows: 50em auto 50em;
+  grid-auto-rows: 1fr 1fr 1fr;
 }
 
 div.about {
@@ -392,6 +393,7 @@ p.about {
   font-family: "Zilla Slab", serif;
   font-size: 2em;
   top: 9em;
+  margin-bottom: 20em;
 }
 
 div.projects {
@@ -423,13 +425,15 @@ div.about:after {
 .all {
   height: 30em; width: 100%;
   grid-column: 2/3; grid-row: 2/3;
-  top: 0;
+  align-self: center;
   position: relative;
   display: flex;
   height: auto; width: auto;
   flex-wrap: wrap;
-  align-items: center; justify-content: space-evenly;  
-  flex-direction: row-reverse;  
+  justify-content: space-evenly;  
+  flex-direction: row-reverse; 
+  margin-top: 11em; 
+  margin-bottom: 10em;
 }
  
 .container {
@@ -498,7 +502,7 @@ button.p_code {
 }
 
 .projects {
-    scroll-margin-top: 1em;
+    scroll-margin-top: 1.5em;
 }
 
 .container2 {
@@ -508,3 +512,44 @@ button.p_code {
   box-shadow: 0 0 10px 2px black;
   margin-bottom: 1.8em;
 }  
+
+div.skills {
+  grid-column: 2/3; grid-row: 3/4;
+}
+.skills {
+  scroll-margin-top: 1.5em;
+}
+
+h1.skills {
+  color: #ff6262;
+  font-family: "Bebas Neue", cursive;
+  font-size: 5em;
+  text-shadow: 0.03em 0.03em 0 black;
+  justify-self: center;
+}
+
+div.skills:after {
+  content: "";
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: inline-block;
+  border: 0.4em solid #333333;
+  background-color: #333333;
+  border-radius: 8px;
+  width: 100%;
+  height: 0.01em;
+  position: absolute;
+  left: 0;
+  top: 11.5em;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 3em;
+  margin: 0;
+  font-family: "Zilla Slab", serif;
+}
+
+.pic {
+  height: 10em; width: auto;
+}

@@ -352,7 +352,7 @@ section.about {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 50em auto 50em;
+  grid-template-rows: 50em auto auto;
   grid-auto-rows: 1fr 1fr 1fr;
 }
 
@@ -545,11 +545,23 @@ div.skills:after {
 
 h3 {
   font-weight: 600;
-  font-size: 3em;
+  font-size: 2.5em;
+  color: black;
   margin: 0;
   font-family: "Zilla Slab", serif;
 }
 
 .pic {
-  height: 10em; width: auto;
+  height: 6em; width: auto;
+}
+
+.all_logos {
+  grid-column: 2/3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo {
+  width: 15em;
 }

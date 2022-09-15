@@ -189,6 +189,10 @@ nav a:hover {
   ion-icon.contact:hover {
     color: #ff6262;
   }
+
+  h2.about {
+    font-size: 3;
+  }
 }
 
 html,
@@ -562,6 +566,7 @@ h3 {
   justify-content: center;
 }
 
-.logo {
+.logos {
   width: 15em;
+  margin-bottom: 2em;
 }

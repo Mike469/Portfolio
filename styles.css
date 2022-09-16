@@ -116,6 +116,16 @@ nav a:hover {
   font-family: "Zilla Slab", serif;
 }
 
+.logo:hover {
+  cursor: pointer;
+  text-shadow: .5px .5px white;
+}
+
+a.logo {
+  text-decoration: none;
+  color: #ff6262;
+}
+
 @media screen and (min-width: 1050px) {
   .nav-toggle-label {
     display: none;
@@ -183,6 +193,7 @@ nav a:hover {
 
   nav.end a {
     margin-right: 2em;
+    font-size: 1.5em;
   }
 
   ion-icon.contact {

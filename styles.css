@@ -126,7 +126,13 @@ a.logo {
   color: #ff6262;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1050px) {
+div.info_about {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1050px) and (orientation: portrait) {
   .nav-toggle-label {
     display: none;
   }

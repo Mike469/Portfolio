@@ -126,7 +126,7 @@ a.logo {
   color: #ff6262;
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1050px) {
   .nav-toggle-label {
     display: none;
   }

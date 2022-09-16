@@ -354,28 +354,10 @@ h1.cute_name:after {
     display: none
   }
 
-  .about {
+  p.about {
     font-size: .6em;
   }
 
-  div.projects {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    color: #ff6262;
-    font-family: "Bebas Neue", cursive;
-    font-size: 3.5em;
-    text-shadow: 0.03em 0.03em 0 black;
-    justify-self: center;
-    position: relative;
-  }
-
-  h1.skills {
-    color: #ff6262;
-    font-family: "Bebas Neue", cursive;
-    font-size: 3.5em;
-    text-shadow: 0.03em 0.03em 0 black;
-    justify-self: center;
-  }
 }
 
 

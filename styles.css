@@ -28,6 +28,7 @@ header {
   display: flex;
   align-items: center;
 }
+
 .nav-toggle-label:hover {
   cursor: pointer;
 }
@@ -75,11 +76,13 @@ nav.middle {
   transition: transform 400ms ease-in-out;
   font-family: "Zilla Slab", serif;
 }
+
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 nav li {
   margin-bottom: 1em;
   margin-left: 1em;
@@ -102,11 +105,11 @@ nav a:hover {
   color: #ff6262;
 }
 
-.nav-toggle:checked ~ nav {
+.nav-toggle:checked~nav {
   transform: scale(1, 1);
 }
 
-.nav-toggle:checked ~ nav a {
+.nav-toggle:checked~nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
@@ -148,6 +151,7 @@ section {
   grid-template-columns: 1fr 10fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
+
 section {
   text-align: center;
   margin: 0;
@@ -185,6 +189,7 @@ h1.cute_name {
   padding: 0;
   margin-top: 1.1em;
 }
+
 h1.cute_name:after {
   width: 4.1em;
   content: attr(data-shadow);
@@ -193,13 +198,11 @@ h1.cute_name:after {
   left: 0em;
   z-index: -1;
   text-shadow: none;
-  background-image: linear-gradient(
-    45deg,
-    transparent 45%,
-    hsla(48, 20%, 90%, 1) 45%,
-    hsla(48, 20%, 90%, 1) 55%,
-    transparent 0
-  );
+  background-image: linear-gradient(45deg,
+      transparent 45%,
+      hsla(48, 20%, 90%, 1) 45%,
+      hsla(48, 20%, 90%, 1) 55%,
+      transparent 0);
   background-size: 0.05em 0.05em;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -211,6 +214,7 @@ h1.cute_name:after {
   0% {
     background-position: 0 0;
   }
+
   0% {
     background-position: 100% -100%;
   }
@@ -229,6 +233,7 @@ section.about {
 div.about {
   margin-top: 6em;
 }
+
 .about {
   scroll-margin-top: 1.5em;
 }
@@ -283,98 +288,121 @@ div.about:after {
 }
 
 .all {
-  grid-column: 2/3; grid-row: 2/3;
+  grid-column: 2/3;
+  grid-row: 2/3;
   align-self: center;
   position: relative;
   display: flex;
-  height: auto; width: auto;
+  height: auto;
+  width: auto;
   flex-wrap: wrap;
-  justify-content: space-evenly;  
-  flex-direction: row-reverse; 
-  margin-top: 11em; 
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  margin-top: 11em;
   margin-bottom: 10em;
 }
- 
+
 .container {
-    height: 28em; width: 22em;
-    background-color: black;
-    grid-column: 2/3; grid-row: 2/3;
-    box-shadow: 0 0 10px 2px black;
-    margin-bottom: 1.8em;
-}  
+  height: 28em;
+  width: 22em;
+  background-color: black;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  box-shadow: 0 0 10px 2px black;
+  margin-bottom: 1.8em;
+}
 
 img.portfolio {
-    height: auto; width: 21.9em;
+  height: auto;
+  width: 21.9em;
 }
 
 .heading {
-    margin: 0;
-    font-size: 2em;
-    color: #ff6262;    
-    font-family: "Bebas Neue", cursive;
-    text-shadow: 0.03em 0.03em 0 #222;
-    border-bottom: #605f5f .01em solid;
+  margin: 0;
+  font-size: 2em;
+  color: #ff6262;
+  font-family: "Bebas Neue", cursive;
+  text-shadow: 0.03em 0.03em 0 #222;
+  border-bottom: #605f5f .01em solid;
 }
 
 div.p {
-    width: auto; height: 10em;
-    display: flex;
-    align-items: center;
+  width: auto;
+  height: 10em;
+  display: flex;
+  align-items: center;
 }
 
 p.portfolio {
-    margin: 0;
-    color: white;
-    font-family: "Zilla Slab", serif;
-    margin-left: 1.5em; margin-right: 1.5em;
+  margin: 0;
+  color: white;
+  font-family: "Zilla Slab", serif;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 
 button.p_demo {
-    background-color: #222;
-    color: white;
-    height: 2.5em; width: 4em;
-    font-family: "Zilla Slab", serif;
-    font-size: 1.5em;
-    border-radius: 5em;
-    margin-right: 2em;
-    text-shadow: 0.03em 0.03em 0 black;
+  background-color: #222;
+  color: white;
+  height: 2.5em;
+  width: 4em;
+  font-family: "Zilla Slab", serif;
+  font-size: 1.5em;
+  border-radius: 5em;
+  margin-right: 2em;
+  text-shadow: 0.03em 0.03em 0 black;
 }
 
 button.p_demo:hover {
-    color: #ff6262;
-    cursor: pointer;
+  color: #ff6262;
+  cursor: pointer;
 }
 
 button.p_code:hover {
-    color: #ff6262;
-    cursor: pointer;
+  color: #ff6262;
+  cursor: pointer;
 }
 
 button.p_code {
-    background-color: #222;
-    color: white;
-    height: 2.5em; width: 4em;
-    font-family: "Zilla Slab", serif;
-    font-size: 1.5em;
-    border-radius: 5em;
-    text-shadow: 0.03em 0.03em 0 black;
+  background-color: #222;
+  color: white;
+  height: 2.5em;
+  width: 4em;
+  font-family: "Zilla Slab", serif;
+  font-size: 1.5em;
+  border-radius: 5em;
+  text-shadow: 0.03em 0.03em 0 black;
 }
 
 .projects {
-    scroll-margin-top: 1.5em;
+  scroll-margin-top: 1.5em;
 }
 
 .container2 {
-  height: 28em; width: 22em;
+  height: 28em;
+  width: 22em;
   background-color: black;
-  grid-column: 2/3; grid-row: 2/3;
+  grid-column: 2/3;
+  grid-row: 2/3;
   box-shadow: 0 0 10px 2px black;
   margin-bottom: 1.8em;
-}  
+}
+
+.container3 {
+  height: 28em;
+  width: 22em;
+  background-color: black;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  box-shadow: 0 0 10px 2px black;
+  margin-bottom: 1.8em;
+}
 
 div.skills {
-  grid-column: 2/3; grid-row: 3/4;
+  grid-column: 2/3;
+  grid-row: 3/4;
 }
+
 .skills {
   scroll-margin-top: 1.5em;
 }
@@ -411,7 +439,8 @@ h3 {
 }
 
 .pic {
-  height: 6em; width: auto;
+  height: 6em;
+  width: auto;
 }
 
 .all_logos {
@@ -435,6 +464,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   .logo {
     grid-column: 1 / 2;
     color: #ff6262;
@@ -488,7 +518,7 @@ h3 {
     all: unset;
     grid-column: 3/4;
     align-self: center;
-    
+
   }
 
   nav.end a {
@@ -509,10 +539,12 @@ h3 {
 }
 
 @media screen and (max-width: 825px) {
+
   html,
   section {
     height: 36em;
   }
+
   h1.cute_name {
     display: inline-block;
     color: #ff6262;
@@ -525,6 +557,7 @@ h3 {
     padding: 0;
     margin-top: 2em;
   }
+
   h1.cute_name:after {
     width: 4.1em;
     content: attr(data-shadow);
@@ -533,13 +566,11 @@ h3 {
     left: 0em;
     z-index: -1;
     text-shadow: none;
-    background-image: linear-gradient(
-      45deg,
-      transparent 45%,
-      hsla(48, 20%, 90%, 1) 45%,
-      hsla(48, 20%, 90%, 1) 55%,
-      transparent 0
-    );
+    background-image: linear-gradient(45deg,
+        transparent 45%,
+        hsla(48, 20%, 90%, 1) 45%,
+        hsla(48, 20%, 90%, 1) 55%,
+        transparent 0);
     background-size: 0.05em 0.05em;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -553,6 +584,7 @@ h3 {
 }
 
 @media screen and (max-width: 550px) {
+
   html,
   section {
     height: 28em;
@@ -570,6 +602,7 @@ h3 {
     padding: 0;
     margin-top: 2.6em;
   }
+
   h1.cute_name:after {
     display: none
   }

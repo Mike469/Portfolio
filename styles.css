@@ -297,12 +297,13 @@ div.about:after {
   width: auto;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  flex-direction: row-reverse;
   margin-top: 11em;
   margin-bottom: 10em;
+  column-gap: 5em;
 }
 
 .container {
+  order: 3;
   height: 28em;
   width: 22em;
   background-color: black;
@@ -379,6 +380,7 @@ button.p_code {
 }
 
 .container2 {
+  order: 1;
   height: 28em;
   width: 22em;
   background-color: black;
@@ -389,6 +391,7 @@ button.p_code {
 }
 
 .container3 {
+  order: 2;
   height: 28em;
   width: 22em;
   background-color: black;

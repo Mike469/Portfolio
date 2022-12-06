@@ -166,6 +166,7 @@ ion-icon.arrow {
   color: #dcdcdc;
   font-size: 3em;
   top: 10em;
+  right: 47.6vw;
   position: absolute;
 }
 
@@ -303,7 +304,7 @@ div.about:after {
 }
 
 .container {
-  order: 3;
+  order: 1;
   height: 28em;
   width: 22em;
   background-color: black;
@@ -380,7 +381,18 @@ button.p_code {
 }
 
 .container2 {
-  order: 1;
+  order: 2;
+  height: 28em;
+  width: 22em;
+  background-color: black;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  box-shadow: 0 0 10px 2px black;
+  margin-bottom: 1.8em;
+}
+
+.container4 {
+  order: 3;
   height: 28em;
   width: 22em;
   background-color: black;
@@ -391,7 +403,7 @@ button.p_code {
 }
 
 .container3 {
-  order: 2;
+  order: 4;
   height: 28em;
   width: 22em;
   background-color: black;
